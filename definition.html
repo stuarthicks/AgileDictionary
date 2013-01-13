@@ -5,12 +5,12 @@
         <script type='text/javascript'>
             function loadJSON(filePath) {
                 var client = new XMLHttpRequest();
-                client.open('GET', filepath);
+                client.open('GET', filePath);
                 client.onreadystatechange = function() {
                     return JSON.parse(client.responseText);
                 }
             }
-            var yuriy = loadJSON('yuriy-zubarev.json');
+            var yuriy = loadJSON('/yuriy-zubarev.json');
 
             function pickRandomProperty(obj) {
                 var result;
