@@ -1,0 +1,167 @@
+{
+    "author" : "Yuriy Zubarev"
+    "url" " "http://www.yuriy-zubarev.com"
+    "definitions": [
+    {
+        "word": "Agile",
+            "meaning": "1. a faith\\n2. is whatever you want it to be to achieve what you need to achieve"
+    },
+    {
+        "word" : "Agile Certification"
+        "meaning" "1. a pilot license that both an eagle and an elephant can easily obtain"
+    },
+    {
+        "word" : "Agile Manifesto"
+        "meaning" "1. a document that tipped the balance from analysis paralysis to refactor distractor\\n2. a proof that principles are often mistaken for rules\\n3. a license for avoiding documentation, and not having a plan"
+    },
+    {
+        "word" : "Backlog"
+        "meaning" "1. a land of forgotten dreams"
+    },
+    {
+        "word" : "BDD"
+        "meaning" "1. an ironic example of a development community building tools for non developers, and ending up being the only ones using them"
+    },
+    {
+        "word" : "Burn Down"
+        "meaning" "a condition of a Development Team at the end of a Spring"
+    },
+    {
+        "word" : "Code Review"
+        "meaning" "1. the most common example of Technical Debt\\n2. a process of curing root rot by trimming leaves"
+    },
+    {
+        "word" : "Continuous Delivery"
+        "meaning" "1. a blockbuster sequel to Continuous Integration"
+    },
+    {
+        "word" : "Continuous Integration"
+        "meaning" "1. a good idea turned into a semi-automated Continuous Disaster"
+    },
+    {
+        "word" : "Daily Scrum or Daily Stand-up"
+        "meaning" "1. weekly two-hour long meeting\\n2. the three forbidden questions we never speak of\\n3. a license not to talk to your team members in between stand-ups"
+    },
+    {
+        "word" : "Development Team"
+        "meaning" "1. is the same as Development Team in waterfall but with an added illusion of empowerment"
+    },
+    {
+        "word" : "DevOps"
+        "meaning" "1. a new breed of professionals who can write “Hello World” and deploy it to Heroku"
+    },
+    {
+        "word" : "DDD"
+        "meaning" "1. a methodology so advanced that it could only be used once to produce the venerable TimeAndMoney\\n2. Deadline Driven Development"
+    },
+    {
+        "word" : "Emergent Design"
+        "meaning" "1. a process in which parents who read Tarzan abandon their infant in a forest only to see it grow into Bigfoot"
+    },
+    {
+        "word" : "Enterprise Agile"
+        "meaning" "1. an oxymoron"
+    },
+    {
+        "word" : "Evolutionary Architecture"
+        "meaning" "1. a process equally capable of producint hummingbirds as well as vampire bats"
+    },
+    {
+        "word" : "Extreme Programming (XP)"
+        "meaning" "1. a methodology that was so extreme that it’s not practiced anymore"
+    },
+    {
+        "word" : "Feedback"
+        "meaning" "1. a rare and valuable currency of Agile: everybody wants to receive it, nobody wants to give it away"
+    },
+    {
+        "word" : "Impediment"
+        "meaning" "1. a manifestation of organizational culture"
+    },
+    {
+        "word" : "Kanban"
+        "meaning" "1. a paradox where the Software Development industry tries very hard to differentiate itself from traditional manufacturing systems by borrowing a method originated in those very systems\\n2. an example that anything sounds more legitimate if it’s in Japanese"
+    },
+    {
+        "word" : "Pair Programming"
+        "meaning" "1. an unsolved puzzle for economists, managers, and compensation specialists"
+    },
+    {
+        "word" : "Planning Poker"
+            "meaning" "1. a parody on a real poker: everybody bluffs that they don’t know the hands and the next moves, and pretend to have fun"
+    },
+    {
+        "word" : "Product Owner"
+        "meaning" "1. a guardian to protect Stakeholders from an unwashed Development Team"
+    },
+    {
+        "word" : "Refactoring"
+        "meaning" "1. a word one says before one sins\\n2. a source to bail out the global economy if Development Teams had one dollar for every promise to refactor"
+    },
+    {
+        "word" : "Scrum"
+        "meaning" "1. a religion\\n2. a commercialization of Agile"
+    },
+    {
+        "word" : "Scrum/Agile Project Management Software"
+        "meaning" "1. a kick in the stomach to the first principle of Agile Manifesto"
+    },
+    {
+        "word" : "Scrum Master"
+        "meaning" "1. a person who removes stumbling blocks and in so-doing eventually self destructs\\n2. a person with a stopwatch, a squeaky toy, and a whistle"
+    },
+    {
+        "word" : "Software Craftsmanship"
+        "meaning" "1. an effort to turn one’s hobby into a full time job and have one’s employer to pay for it"
+    },
+    {
+        "word" : "Spike"
+        "meaning" "1. a gas pedal for a Velocity of a Sprint"
+    },
+    {
+        "word" : "Sprint"
+        "meaning" "an enchanted quest to collect magical Story Points"
+    },
+    {
+        "word" : "Sprint Planning"
+        "meaning" "1. a meeting where bells and whistles are prioritized over nuts and bolts"
+    },
+    {
+        "word" : "Sprint Retrospective"
+        "meaning" "1. a mystical meeting that is always skipped to give the next Sprint more time
+        "
+    },
+    {
+        "word" : "Sprint Review"
+        "meaning" "1. a meeting ignored by Stakeholders\\n2. a ceremony where a production crew is watching their own movie and is handing themselves the Oscar statuette"
+    },
+    {
+        "word" : "Stakeholders"
+        "meaning" "1. people who secretly hate Agile"
+    },
+    {
+        "word" : "Story Points"
+        "meaning" "1. a relative measure of absolute inability to estimate"
+    },
+    {
+        "word" : "TDD"
+        "meaning" "1. an approach to build a car with a hundred air bags and no engine"
+    },
+    {
+        "word" : "Technical Debt"
+        "meaning" "1. a measurement of a sentiment of a Development Team\\n2. a plague ship that always sinks to the bottom of a Backlog"
+    },
+    {
+        "word" : "User Story"
+        "meaning" "1. an oversimplification of requirements to the level where it's embarassing to read it, so nobody does"
+    },
+    {
+        "word" : "Velocity"
+        "meaning" "1. the next best thing after real results"
+    },
+    {
+        "word" : "xDD Family of Methodologies"
+        "meaning" "1. a choir made up of prophets each singing their own hymns"
+    }
+    ]
+}
