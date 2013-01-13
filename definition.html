@@ -4,8 +4,11 @@
         <title>Agile Dictionary</title>
         <script type='text/javascript'>
             function loadJSON(filePath) {
-                var json = loadTextFileAjaxSync(filePath, "application/json");
-                return JSON.parse(json);
+                var client = new XMLHttpRequest();
+                client.open('GET', filepath);
+                client.onreadystatechange = function() {
+                    return JSON.parse(client.responseText);
+                }
             }
             var yuriy = loadJSON('yuriy-zubarev.json');
 
