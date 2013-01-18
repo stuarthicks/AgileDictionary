@@ -1,1 +1,46 @@
-under construction
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agile Dictionary</title>
+    <script type='text/javascript'>
+      function loadJSON(filePath) {
+        var client = new XMLHttpRequest();
+        client.open('GET', filePath, false);
+        client.send();
+        return JSON.parse(client.responseText);
+      }
+      var defs = loadJSON('/yuriy-zubarev.json');
+
+      function pickRandomProperty(obj) {
+        var result;
+        var count = 0;
+        for (var prop in obj) {
+          if (Math.random() < 1/++count) {
+            result = prop;
+          }
+        }
+        return result;
+      }
+
+      function getRandomDefinition() {
+        for (var key in defs) {
+          if (!defs.hasOwnProperty(key)) continue;
+          if (key === 'definitions') {
+            return defs.definitions[pickRandomProperty(key)];
+          }
+        }
+      }
+
+      function refreshDef() {
+        var def = getRandomDefinition();
+        document.getElementById('word').innerHTML = def['word'];
+        document.getElementById('def').innerHTML = def['meaning'];
+      }
+    </script>
+  </head>
+  <body onload="refreshDef()">
+    <h1 class="title">Agile Dictionary</h1>
+    <h2 id="word" class="word"></h2>
+    <p id="def" class="def"></p>
+  </body>
+</html>
