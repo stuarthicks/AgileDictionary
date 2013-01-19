@@ -42,3 +42,8 @@ body {
 p + p {
   margin-top: 0.5em;
 }
+
+.footer {
+  margin-top: 3em;
+  font-size: 70%;
+}

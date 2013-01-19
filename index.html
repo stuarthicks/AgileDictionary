@@ -37,7 +37,7 @@
         var def = getRandomDefinition();
         document.getElementById('word').innerHTML = def['word'];
         document.getElementById('meaning').innerHTML = '<p>' + def['meaning'].split('\n').join('</p><p>') + '</p>';
-        document.getElementById('author').innerHTML = '<p>' + defs['author'] + '</p>';
+        document.getElementById('author').innerHTML = '<p><a href="' + defs['url'] + '">' + defs['author'] + '</a></p>';
       }
     </script>
   </head>
@@ -47,6 +47,9 @@
       <h2 id="word" class="word"></h2>
       <div id="meaning" class="meaning"></div>
       <div id="author" class="author"></div>
+    </div>
+    <div class="footer">
+      <p>This was made by <a><!-- TODO add your link-->calamari</a> and <a href="http://haku.me">haku</a>.</p>
     </div>
   </body>
 </html>

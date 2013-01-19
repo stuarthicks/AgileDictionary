@@ -11,3 +11,11 @@ body {
 .author {
   color: #bbb;
 }
+
+.footer {
+  color: #666;
+}
+
+a:link, a:visited, a:active, a:hover {
+  color: inherit;
+}
