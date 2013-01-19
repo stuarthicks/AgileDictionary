@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Agile Dictionary</title>
+    <link href="layout.css" type="text/css" rel="stylesheet">
+    <link href="colours.css" type="text/css" rel="stylesheet">
     <script type='text/javascript'>
       function loadJSON(filePath) {
         var client = new XMLHttpRequest();
@@ -34,13 +36,17 @@
       function refreshDef() {
         var def = getRandomDefinition();
         document.getElementById('word').innerHTML = def['word'];
-        document.getElementById('def').innerHTML = def['meaning'];
+        document.getElementById('meaning').innerHTML = '<p>' + def['meaning'].split('\n').join('</p><p>') + '</p>';
+        document.getElementById('author').innerHTML = '<p>' + defs['author'] + '</p>';
       }
     </script>
   </head>
   <body onload="refreshDef()">
     <h1 class="title">Agile Dictionary</h1>
-    <h2 id="word" class="word"></h2>
-    <p id="def" class="def"></p>
+    <div class="definition">
+      <h2 id="word" class="word"></h2>
+      <div id="meaning" class="meaning"></div>
+      <div id="author" class="author"></div>
+    </div>
   </body>
 </html>

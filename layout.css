@@ -1,0 +1,44 @@
+/* reset */
+body, h1, h2, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: sans;
+  text-align: center;
+}
+
+.title, .word, .author {
+  font-family: Georgia, serif;
+}
+
+.title {
+  text-align: center;
+  margin: 1em;
+}
+
+.definition {
+  text-align: left;
+  margin: 1em 15%;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+.word {
+  margin: 0.5em 2em;
+}
+
+.meaning {
+  margin: 1em;
+}
+
+.author {
+  text-align: right;
+  font-style: italic;
+  margin: 0.5em 1em;
+}
+
+p + p {
+  margin-top: 0.5em;
+}
