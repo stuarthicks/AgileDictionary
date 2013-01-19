@@ -11,6 +11,7 @@
         client.send();
         return JSON.parse(client.responseText);
       }
+      // TODO will need a random picker when we have more than one file.
       var defs = loadJSON('/yuriy-zubarev.json');
 
       function pickRandomProperty(obj) {
@@ -38,6 +39,7 @@
         document.getElementById('word').innerHTML = def['word'];
         document.getElementById('meaning').innerHTML = '<p>' + def['meaning'].split('\n').join('</p><p>') + '</p>';
         document.getElementById('author').innerHTML = '<p><a href="' + defs['url'] + '">' + defs['author'] + '</a></p>';
+        // TODO add a perma-link for each def?
       }
     </script>
   </head>
