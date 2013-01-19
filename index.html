@@ -1,1 +1,57 @@
-under construction
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agile Dictionary</title>
+    <link href="layout.css" type="text/css" rel="stylesheet">
+    <link href="colours.css" type="text/css" rel="stylesheet">
+    <script type='text/javascript'>
+      function loadJSON(filePath) {
+        var client = new XMLHttpRequest();
+        client.open('GET', filePath, false);
+        client.send();
+        return JSON.parse(client.responseText);
+      }
+      // TODO will need a random picker when we have more than one file.
+      var defs = loadJSON('/yuriy-zubarev.json');
+
+      function pickRandomProperty(obj) {
+        var result;
+        var count = 0;
+        for (var prop in obj) {
+          if (Math.random() < 1/++count) {
+            result = prop;
+          }
+        }
+        return result;
+      }
+
+      function getRandomDefinition() {
+        for (var key in defs) {
+          if (!defs.hasOwnProperty(key)) continue;
+          if (key === 'definitions') {
+            return defs.definitions[pickRandomProperty(key)];
+          }
+        }
+      }
+
+      function refreshDef() {
+        var def = getRandomDefinition();
+        document.getElementById('word').innerHTML = def['word'];
+        document.getElementById('meaning').innerHTML = '<p>' + def['meaning'].split('\n').join('</p><p>') + '</p>';
+        document.getElementById('author').innerHTML = '<p><a href="' + defs['url'] + '">' + defs['author'] + '</a></p>';
+        // TODO add a perma-link for each def?
+      }
+    </script>
+  </head>
+  <body onload="refreshDef()">
+    <h1 class="title">Agile Dictionary</h1>
+    <div class="definition">
+      <h2 id="word" class="word"></h2>
+      <div id="meaning" class="meaning"></div>
+      <div id="author" class="author"></div>
+    </div>
+    <div class="footer">
+      <p>This was made by <a><!-- TODO add your link-->calamari</a> and <a href="http://haku.me">haku</a>.</p>
+    </div>
+  </body>
+</html>
