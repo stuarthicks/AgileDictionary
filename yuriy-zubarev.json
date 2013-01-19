@@ -1,10 +1,10 @@
 {
   "author":"Yuriy Zubarev",
-  "url":"www.yuriy-zubarev.com",
+  "url":"http://www.yuriy-zubarev.com",
   "definitions":[
     {
       "word":"Agile",
-      "meaning":"1. a faith\\n2. is whatever you want it to be to achieve what you need to achieve"
+      "meaning":"1. a faith\n2. is whatever you want it to be to achieve what you need to achieve"
     },
     {
       "word":"Agile Certification",
@@ -12,7 +12,7 @@
     },
     {
       "word":"Agile Manifesto",
-      "meaning":"1. a document that tipped the balance from analysis paralysis to refactor distractor\\n2. a proof that principles are often mistaken for rules\\n3. a license for avoiding documentation, and not having a plan"
+      "meaning":"1. a document that tipped the balance from analysis paralysis to refactor distractor\n2. a proof that principles are often mistaken for rules\n3. a license for avoiding documentation, and not having a plan"
     },
     {
       "word":"Backlog",
@@ -28,7 +28,7 @@
     },
     {
       "word":"Code Review",
-      "meaning":"1. the most common example of Technical Debt\\n2. a process of curing root rot by trimming leaves"
+      "meaning":"1. the most common example of Technical Debt\n2. a process of curing root rot by trimming leaves"
     },
     {
       "word":"Continuous Delivery",
@@ -40,7 +40,7 @@
     },
     {
       "word":"Daily Scrum or Daily Stand-up",
-      "meaning":"1. weekly two-hour long meeting\\n2. the three forbidden questions we never speak of\\n3. a license not to talk to your team members in between stand-ups"
+      "meaning":"1. weekly two-hour long meeting\n2. the three forbidden questions we never speak of\n3. a license not to talk to your team members in between stand-ups"
     },
     {
       "word":"Development Team",
@@ -52,7 +52,7 @@
     },
     {
       "word":"DDD",
-      "meaning":"1. a methodology so advanced that it could only be used once to produce the venerable TimeAndMoney\\n2. Deadline Driven Development"
+      "meaning":"1. a methodology so advanced that it could only be used once to produce the venerable TimeAndMoney\n2. Deadline Driven Development"
     },
     {
       "word":"Emergent Design",
@@ -80,7 +80,7 @@
     },
     {
       "word":"Kanban",
-      "meaning":"1. a paradox where the Software Development industry tries very hard to differentiate itself from traditional manufacturing systems by borrowing a method originated in those very systems\\n2. an example that anything sounds more legitimate if it’s in Japanese"
+      "meaning":"1. a paradox where the Software Development industry tries very hard to differentiate itself from traditional manufacturing systems by borrowing a method originated in those very systems\n2. an example that anything sounds more legitimate if it’s in Japanese"
     },
     {
       "word":"Pair Programming",
@@ -96,11 +96,11 @@
     },
     {
       "word":"Refactoring",
-      "meaning":"1. a word one says before one sins\\n2. a source to bail out the global economy if Development Teams had one dollar for every promise to refactor"
+      "meaning":"1. a word one says before one sins\n2. a source to bail out the global economy if Development Teams had one dollar for every promise to refactor"
     },
     {
       "word":"Scrum",
-      "meaning":"1. a religion\\n2. a commercialization of Agile"
+      "meaning":"1. a religion\n2. a commercialization of Agile"
     },
     {
       "word":"Scrum/Agile Project Management Software",
@@ -108,7 +108,7 @@
     },
     {
       "word":"Scrum Master",
-      "meaning":"1. a person who removes stumbling blocks and in so-doing eventually self destructs\\n2. a person with a stopwatch, a squeaky toy, and a whistle"
+      "meaning":"1. a person who removes stumbling blocks and in so-doing eventually self destructs\n2. a person with a stopwatch, a squeaky toy, and a whistle"
     },
     {
       "word":"Software Craftsmanship",
@@ -132,7 +132,7 @@
     },
     {
       "word":"Sprint Review",
-      "meaning":"1. a meeting ignored by Stakeholders\\n2. a ceremony where a production crew is watching their own movie and is handing themselves the Oscar statuette"
+      "meaning":"1. a meeting ignored by Stakeholders\n2. a ceremony where a production crew is watching their own movie and is handing themselves the Oscar statuette"
     },
     {
       "word":"Stakeholders",
@@ -148,7 +148,7 @@
     },
     {
       "word":"Technical Debt",
-      "meaning":"1. a measurement of a sentiment of a Development Team\\n2. a plague ship that always sinks to the bottom of a Backlog"
+      "meaning":"1. a measurement of a sentiment of a Development Team\n2. a plague ship that always sinks to the bottom of a Backlog"
     },
     {
       "word":"User Story",
