@@ -20,13 +20,14 @@ body {
 
 .definition {
   text-align: left;
-  margin: 1em 15%;
+  margin: 1em 2%;
   padding: 0.5em;
   border-radius: 1em;
+  font-size: 400%;
 }
 
 .word {
-  margin: 0.5em 2em;
+  margin: 0.5em 0.7em;
 }
 
 .meaning {
@@ -44,6 +45,6 @@ p + p {
 }
 
 .footer {
-  margin-top: 3em;
-  font-size: 70%;
+  margin-top: 1em;
+  font-size: 100%;
 }
