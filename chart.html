@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agile Charts</title>
+    <link href="layout.css" type="text/css" rel="stylesheet">
+    <link href="colours.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+      #chart {
+        margin: 1em 2%;
+        padding: 0;
+        height: 30em;
+      }
+    </style>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      function loadJSON(filePath) {
+        var client = new XMLHttpRequest();
+        client.open('GET', filePath, false);
+        client.send();
+        return JSON.parse(client.responseText);
+      }
+	  
+      // TODO will need a random picker when we have more than one file.
+      var defs = loadJSON('/yuriy-zubarev.json');
+
+      function randInt(a, b) {
+        return Math.floor(a + (Math.random() * (b - a + 1)));
+      }
+
+      function getRandomDefinition() {
+        for (var key in defs) {
+          if (!defs.hasOwnProperty(key)) continue;
+          if (key === 'definitions') {
+            return defs.definitions[Math.floor(Math.random()*defs.definitions.length)];
+          }
+        }
+      }
+
+      switch (randInt(0, 1)) {
+        case 0:
+          google.setOnLoadCallback(drawPieChart);
+          break;
+        case 1:
+          google.setOnLoadCallback(drawLineChart);
+          break;
+        default:
+          console.log('oops');
+      }
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // TODO add author link(s).
+      function drawPieChart() {
+        var options = {
+          backgroundColor: '#333',
+          title: 'Agile Process',
+          titleTextStyle: { color: '#eee' },
+          legend: { textStyle: { color: '#eee' } },
+          fontSize: 20
+        };
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Activity');
+        data.addColumn('number', 'Value');
+        var count = randInt(4, 7);
+        for (var i = 0; i < count; i++) {
+          var def = getRandomDefinition();
+          var word = def['word'];
+          data.addRows([
+              [word, randInt(1, 5)],
+              ]);
+        }
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart'));
+        chart.draw(data, options);
+      }
+
+      function drawLineChart () {
+        var hTitle = getRandomDefinition()['word'];
+        var vTitle = getRandomDefinition()['word'];
+        var options = {
+          backgroundColor: '#333',
+          title: 'Agile Performance',
+          titleTextStyle: { color: '#eee' },
+          legend: { textStyle: { color: '#eee' } },
+          hAxis: { title: hTitle, titleTextStyle: { color: '#eee' }, textStyle: { color: '#eee' } },
+          vAxis: { format: '#%', title: vTitle, titleTextStyle: { color: '#eee' }, textStyle: { color: '#eee' } },
+          fontSize: 20
+        };
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'X');
+        var colCount = randInt(1, 4);
+        for (var i = 0; i < colCount; i++) {
+          var def = getRandomDefinition();
+          var word = def['word'];
+          data.addColumn('number', word);
+        }
+        var xCount = randInt(4, 10);
+        for (var i = 0; i < xCount; i++) {
+          var row = [];
+          row.push('' + i);
+          for (var x = 0; x < colCount; x++) {
+            row.push(Math.random());
+          }
+          data.addRow(row);
+        }
+
+        var chartElem = document.getElementById('chart');
+        var chart;
+        if (randInt(0, 1) == 1) {
+          chart = new google.visualization.AreaChart(chartElem);
+        }
+        else {
+          chart = new google.visualization.LineChart(chartElem);
+        }
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart">
+    </div>
+    <div class="footer">
+      <p>This was made by <a href="http://plus.stuarthicks.me">calamari</a> and <a href="http://haku.me">haku</a>.</p>
+    </div>
+  </body>
+</html>
