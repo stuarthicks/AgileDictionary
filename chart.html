@@ -24,7 +24,7 @@
       var defs = loadJSON('/yuriy-zubarev.json');
 
       function randInt(a, b) {
-        return a + (Math.random() * (b - a));
+        return Math.floor(a + (Math.random() * (b - a + 1)));
       }
 
       function getRandomDefinition() {
@@ -36,11 +36,20 @@
         }
       }
 
-      google.setOnLoadCallback(drawChart);
+      switch (randInt(0, 1)) {
+        case 0:
+          google.setOnLoadCallback(drawPieChart);
+          break;
+        case 1:
+          google.setOnLoadCallback(drawLineChart);
+          break;
+        default:
+          console.log('oops');
+      }
       google.load('visualization', '1.0', {'packages':['corechart']});
 
       // TODO add author link(s).
-      function drawChart() {
+      function drawPieChart() {
         var options = {
           backgroundColor: '#333',
           title: 'Agile Process',
@@ -55,7 +64,6 @@
         for (var i = 0; i < randInt(4, 7); i++) {
           var def = getRandomDefinition();
           var word = def['word'];
-          console.log(word);
           data.addRows([
               [word, randInt(1, 5)],
               ]);
@@ -63,7 +71,40 @@
 
         var chart = new google.visualization.PieChart(document.getElementById('chart'));
         chart.draw(data, options);
+      }
 
+      function drawLineChart () {
+        var hTitle = getRandomDefinition()['word'];
+        var vTitle = getRandomDefinition()['word'];
+        var options = {
+          backgroundColor: '#333',
+          title: 'Agile Performance',
+          titleTextStyle: { color: '#eee' },
+          legend: { textStyle: { color: '#eee' } },
+          hAxis: { title: hTitle, titleTextStyle: { color: '#eee' }, textStyle: { color: '#eee' } },
+          vAxis: { format: '#%', title: vTitle, titleTextStyle: { color: '#eee' }, textStyle: { color: '#eee' } },
+          fontSize: 20
+        };
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'X');
+        var colCount = randInt(1, 4);
+        for (var i = 0; i < colCount; i++) {
+          var def = getRandomDefinition();
+          var word = def['word'];
+          data.addColumn('number', word);
+        }
+        for (var i = 0; i < randInt(4, 8); i++) {
+          var row = [];
+          row.push('' + i);
+          for (var x = 0; x < colCount; x++) {
+            row.push(Math.random());
+          }
+          data.addRow(row);
+        }
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart'));
+        chart.draw(data, options);
       }
     </script>
   </head>
