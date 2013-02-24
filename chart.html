@@ -105,7 +105,14 @@
           data.addRow(row);
         }
 
-        var chart = new google.visualization.AreaChart(document.getElementById('chart'));
+        var chartElem = document.getElementById('chart');
+        var chart;
+        if (randInt(0, 1) == 1) {
+          chart = new google.visualization.AreaChart(chartElem);
+        }
+        else {
+          chart = new google.visualization.LineChart(chartElem);
+        }
         chart.draw(data, options);
       }
     </script>
