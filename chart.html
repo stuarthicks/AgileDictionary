@@ -61,7 +61,8 @@
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Activity');
         data.addColumn('number', 'Value');
-        for (var i = 0; i < randInt(4, 7); i++) {
+        var count = randInt(4, 7);
+        for (var i = 0; i < count; i++) {
           var def = getRandomDefinition();
           var word = def['word'];
           data.addRows([
@@ -94,7 +95,8 @@
           var word = def['word'];
           data.addColumn('number', word);
         }
-        for (var i = 0; i < randInt(4, 8); i++) {
+        var xCount = randInt(4, 10);
+        for (var i = 0; i < xCount; i++) {
           var row = [];
           row.push('' + i);
           for (var x = 0; x < colCount; x++) {
