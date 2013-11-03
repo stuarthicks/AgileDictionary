@@ -1,0 +1,21 @@
+{
+  "author":"tef",
+  "url":"http://programmingisterrible.com/post/65781074112/devils-dictionary-of-programming",
+  "definitions":[
+    { "word":"Simple",              "meaning":"It solves my use case." },
+    { "word":"Opinionated",         "meaning":"I don't believe that your use case exists." },
+    { "word":"Elegant",             "meaning":"The only use case is making me feel smart." },
+    { "word":"Lightweight",         "meaning":"I don't understand the use-cases the alternatives solve." },
+    { "word":"Configurable",        "meaning":"It's your job to make it usable." },
+    { "word":"Minimal",             "meaning":"You're going to have to write more code than I did to make it useful." },
+    { "word":"Util",                "meaning":"A collection of wrappers around the standard library, battle worn, and copy-pasted from last weeks project into next weeks." },
+    { "word":"DSL",                 "meaning":"A domain specific language, where code is written in one language and errors are given in another." },
+    { "word":"Framework",           "meaning":"A product with the business logic removed, but all of the assumptions left in." },
+    { "word":"Documented",          "meaning":"There are podcasts, screencasts and answers on stack overflow." },
+    { "word":"Startup",             "meaning":"A business without a business plan." },
+    { "word":"Hackday",             "meaning":"A competition where the entry fee is sleep deprivation and the prize is vendor lock in." },
+    { "word":"Entrepreneur",        "meaning":"One who sets out to provide a return on investment." },
+    { "word":"Serial entrepreneur", "meaning":"One who has yet to provide a return on investment." },
+    { "word":"Disrupt",             "meaning":"To overcome any legal, social, or moral barrier to profit." }
+  ]
+}
